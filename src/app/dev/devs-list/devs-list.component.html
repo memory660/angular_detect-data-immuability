@@ -1,0 +1,95 @@
+<div class="form-check mt-3">
+  <label class="form-check-label">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      [(ngModel)]="immutableUpdatesActive"
+    />
+    immutable updates active
+  </label>
+</div>
+<hr />
+
+<div class="bloc">
+  <h4 class="mb-4">using OnPush strategy</h4>
+  <div class="card-deck">
+    <app-dev-card-v1 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v1>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using Default strategy</h4>
+  <div class="card-deck">
+    <app-dev-card-v2 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v2>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using ngOnChanges</h4>
+  <div class="card-deck">
+    <app-dev-card-v3 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v3>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using setter</h4>
+  <div class="card-deck">
+    <app-dev-card-v4 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v4>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using getter</h4>
+  <div class="card-deck">
+    <app-dev-card-v5 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v5>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using ngDoCheck</h4>
+  <div class="card-deck">
+    <app-dev-card-v6 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v6>
+  </div>
+  <hr />
+</div>
+
+<div class="bloc">
+  <h4 class="mb-4">using Pipe</h4>
+  <div class="card-deck">
+    <app-dev-card-v7 class="card" *ngFor="let dev of devs" [dev]="dev">
+      <app-dev-actions
+        (skillChange)="onSkillChange(dev.id, $event)"
+      ></app-dev-actions>
+    </app-dev-card-v7>
+  </div>
+  <hr />
+</div>
