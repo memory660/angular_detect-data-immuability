@@ -12,6 +12,7 @@ import { DevCardV5Component } from "./devs-list/dev-card-v5/dev-card-v5.componen
 import { DevCardV6Component } from "./devs-list/dev-card-v6/dev-card-v6.component";
 import { DevCardV7Component } from "./devs-list/dev-card-v7/dev-card-v7.component";
 import { SeniorityLevelPipe } from "./devs-list/seniority-level.pipe";
+import { ChildComponent } from "../child/child.component";
 
 @NgModule({
   imports: [CommonModule, FormsModule],
@@ -25,7 +26,8 @@ import { SeniorityLevelPipe } from "./devs-list/seniority-level.pipe";
     DevCardV5Component,
     DevCardV6Component,
     DevCardV7Component,
-    SeniorityLevelPipe
+    SeniorityLevelPipe,
+    ChildComponent,
   ],
   exports: [DevsListComponent]
 })

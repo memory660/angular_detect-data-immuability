@@ -20,7 +20,7 @@ export class DevsListComponent {
   public immutableUpdatesActive = false;
   public devs: Dev[] = [
     { id: 1, name: 'Wojtek', skill: 50 },
-    { id: 2, name: 'Tomek', skill: 80 },
+//    { id: 2, name: 'Tomek', skill: 80 },
   ];
 
   private skillDelta = 10;
